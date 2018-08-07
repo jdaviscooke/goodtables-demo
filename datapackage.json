@@ -11,6 +11,11 @@
                         "name": "date",
                         "type": "date",
                         "description": "The transaction date"
+                    },
+                    {
+                        "name": "from",
+                        "type": "string",
+                        "description": "Payer"
                     }
                 ]
             }
