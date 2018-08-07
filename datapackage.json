@@ -24,7 +24,7 @@
       "schema": {
         "fields": [{
           "name": "id",
-          "type": "numeric",
+          "type": "number",
           "description": "the id of the child"
         }, {
           "name": "attribute",
