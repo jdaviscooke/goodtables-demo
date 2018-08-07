@@ -16,6 +16,11 @@
                         "name": "from",
                         "type": "string",
                         "description": "Payer"
+                    },
+                    {
+                        "name": "to",
+                        "type": "string",
+                        "description": "Payee"
                     }
                 ]
             }
