@@ -3,7 +3,7 @@
   "title": "My dataset",
   "resources": [{
       "name": "parent",
-      "path": "data/child.csv",
+      "path": "data/parent.csv",
       "schema": {
         "fields": [{
             "name": "id",
