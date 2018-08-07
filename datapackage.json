@@ -4,7 +4,16 @@
     "resources": [
         {
             "name": "my-data",
-            "path": "data/data.csv"
+            "path": "data/data.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "date",
+                        "type": "date",
+                        "description": "The transaction date"
+                    }
+                ]
+            }
         }
     ]
 }
