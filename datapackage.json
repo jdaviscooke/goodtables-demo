@@ -23,7 +23,7 @@
                 {
                     "name": "amount",
                     "type": "numeric",
-                    "description": "Transaction value in Euros",
+                    "description": "Transaction value in Euros"
                 }
             ]
         }
