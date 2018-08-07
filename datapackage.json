@@ -8,7 +8,10 @@
         "fields": [{
             "name": "id",
             "type": "number",
-            "description": "ID of the parent"
+            "description": "ID of the parent",
+            "constraints": {
+              "unique": true
+            }
           },
           {
             "name": "attribute",
