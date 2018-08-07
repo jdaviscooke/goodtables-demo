@@ -28,7 +28,10 @@
         "fields": [{
           "name": "id",
           "type": "number",
-          "description": "the id of the child"
+          "description": "the id of the child",
+          "constraints": {
+            "unique": true
+          }
         }, {
           "name": "attribute",
           "type": "string",
