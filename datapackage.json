@@ -1,37 +1,44 @@
 {
-    "name": "my-dataset",
-    "title": "My dataset",
-    "resources": [
-        {
-            "name": "my-data",
-            "path": "data/data.csv",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "date",
-                        "type": "date",
-                        "description": "The transaction date"
-                    },
-                    {
-                        "name": "from",
-                        "type": "string",
-                        "description": "Payer"
-                    },
-                    {
-                        "name": "to",
-                        "type": "string",
-                        "description": "Payee"
-                    },
-                    {
-                        "name": "amount",
-                        "type": "number",
-                        "description": "Transaction value in Euros",
-                        "constraints": {
-                            "minimum": 0
-                        }
-                    }
-                ]
-            }
-        }
-    ]
+  "name": "dataset",
+  "title": "My dataset",
+  "resources": [{
+      "name": "parent",
+      "path": "data/child.csv",
+      "schema": {
+        "fields": [{
+            "name": "id",
+            "type": "number",
+            "description": "ID of the parent"
+          },
+          {
+            "name": "attribute",
+            "type": "string",
+            "description": "the attribute"
+          }
+        ]
+      }
+    },
+    {
+      "name": "child",
+      "path": "data/child.csv",
+      "schema": {
+        "fields": [{
+          "name": "id",
+          "type": "numeric",
+          "description": "the id of the child"
+        }, {
+          "name": "attribute",
+          "type": "string",
+          "description": "the child attribute"
+        }, {
+          "name": "parent_id",
+          "type": "number",
+          "reference": {
+            "resource": "parent",
+            "fields": "id"
+          }
+        }]
+      }
+    }
+  ]
 }
